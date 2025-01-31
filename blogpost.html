@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPost</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: orange;
+            padding: 20px;
+            font-family: cursive;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 20px;
+        }
+
+        .head img {
+            height: 40px;
+            width: 40px;
+            vertical-align: middle;
+        }
+
+        /* Navigation styling */
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+            padding: 10px 20px;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+            border-radius: 4px;
+        }
+
+        /* Grid layout for posts */
+        .posts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Post Section */
+        .post {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-left: 100px;
+        }
+
+        .post img {
+            display: block;
+            height: 400px;
+            width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            align-self: auto;
+        }
+
+        .post h2 {
+            margin-top: 0;
+            color: orange;
+        }
+
+        .post p {
+            text-align: justify;
+        }
+        .post1 {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 100px;
+            text-align: center;
+        }
+
+        .post1 img {
+            display: block;
+            height: 200px;
+            width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .post1 h2 {
+            margin-top: 0;
+            color: orange;
+        }
+
+        .post1 p {
+            text-align: justify;
+        }
+
+        /* Comment Section */
+        .comment-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        .comment-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .comment-section textarea {
+            width: 1400px;
+            padding: 30px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .comment-section button {
+            padding: 10px 15px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Categories */
+        .categories {
+            margin: 20px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .categories h3 {
+            margin-bottom: 10px;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .categories ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .categories ul li a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .categories ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .posts-container button {
+            padding: 10px 15px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       
+    </style>
+    <script>
+        function changestyling()
+        {
+            alert("Item added to Cart");
+        }
+        function buttonclicked()
+        {
+            alert("Your Response Submitted \n Thank you for your Response");
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="head">
+            <h1><img src="amazon-logo.png" alt="Logo"> Amazon Blog</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="topnav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#categories">Categories</a>
+            <a href="#comment">Comments</a>
+            <a href="#help">Help</a>
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#tech">Technology</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#gadgets">Gadgets</a></li>
+        </ul>
+    </section>
+
+    <!-- Blog Post Section -->
+    <section class="posts-container" id="home">
+        <div class="post">
+            <h2>Laptop Review: Best Laptops for Video Editing</h2>
+            <a href="https://www.nytimes.com/wirecutter/reviews/best-15-inch-laptops-for-photo-and-video-editing/" target="_blank"></a>
+            <img src="dell.jpeg" alt="Dell Laptop">
+            <h2>Dell</h2>
+            <h3>Rs. 45,000/-</h3>
+            <button onclick="changestyling();">Add To Cart</button>
+            <p>Performance in a laptop is all about speed – specifically, the speed of processing tasks, accessing memory, and rendering graphics. Powerful laptops can process massive amounts of data and run multiple applications simultaneously The most powerful CPUs
+                A computer’s CPU, or central processing unit is one of the main factors in processing speed. Several features contribute to the speed with which a CPU performs.
+                Clock speed is the rate at which a CPU can process tasks. Measured in gigahertz (GHz), the higher the clock speed, the faster the laptop will be on average.
+                Cores are individual processors – the more cores a CPU has, the more efficiently it can process multiple tasks.
+                Threads are virtual cores. Multi-thread CPUs divide a single physical processor into two virtual processors to potentially increase CPU speed.
+                One of the biggest questions when buying a high-yield device is prioritizing clock speed or cores. It's best to look at the requirements of your primary applications. Some platforms will perform better with faster clock speeds, while others will do better with more cores with multithreading capabilities Clock speed is the rate at which a CPU can process tasks. Measured in gigahertz (GHz), the higher the clock speed, the fast ....</p>
+            <a href="https://www.dell.com/en-us/lp/high-performance-laptops" target="_blank">Read More...</a>
+        </div>
+
+        <div class="post1">
+            <h2>Laptop Review: A Comprehensive Guide to Laptops</h2>
+            <img src="hp.jpg" alt="Laptop">
+            <h2>HP</h2>
+            <h3>Rs. 55,000/-</h3>
+            <button onclick="changestyling();">Add To Cart</button>
+            <p>A laptop, sometimes called a notebook computer by manufacturers, is a battery- or AC-powered personal computer (PC) smaller than a briefcase. A laptop can be easily transported and used in temporary spaces One of the key points of a laptop is portability. Smaller laptops are lightweight and easier to carry. A bigger laptop offers a bigger screen size.
+                Screen resolution. Higher resolution liquid crystal display or LCD screens display sharper graphics and increase the usable viewing area. High pixel density displays are becoming increasingly popular.
+                Processing power. Laptop processors have two, four or eight cores and, because of that, vary in performance.
+                Memory. Typically, laptop random access memory (RAM) is 4, 8 or 16 GB. The most common RAM is 8 GB, and memory is often soldered to the motherboard.
+                Input. Laptops often have a built-in microphone, video camera and various input ports, such as Lightning, HDMI and USB ports. Some companies have gradually reduced the number of ports on the laptop body. Laptops use several different approaches for integrating a mouse into the keyboard, including touch pads, trackballs and pointing sticks.
+                Durability. Laptops vary in durability; some are designed for use in rugged conditions...</p>
+            <a href="https://www.techtarget.com/searchmobilecomputing/definition/laptop-computer" target="_blank">Read More...</a>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section class="comment-section" id="comment">
+        <h3>Leave a Comment:</h3>
+        <textarea rows="5" placeholder="Write your comment..."></textarea>
+        <br>
+        <button onclick="buttonclicked();">Submit</button>
+    </section>
+</body>
+</html>
